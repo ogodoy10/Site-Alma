@@ -1,0 +1,555 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #D88B6A;
+}
+
+nav{
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    display: flex;
+    background-color: #D8A66A;
+    padding: 10px; /* Adiciona um preenchimento interno para espaçamento */
+    user-select: none;
+    position: relative;
+    font-size: 20px;
+}
+
+nav img{
+    width: 204px;
+    height: 50%;
+    margin-top: 20px;
+}
+
+nav a{
+    color: black; /* Define a cor do texto para branco */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin-top: 35px;
+}
+
+nav a.home{
+    margin-left: 380px; /* Move o link HOME para a esquerda */
+}
+
+nav summary{
+    margin-left: 200px;
+    margin-top: 35px;
+}
+
+.contato{
+    margin-left: 200px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 35px;
+}
+
+.dropbtn{
+    font-size: 0.9em;
+    line-height: normal;
+    padding: 0;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    left: -30px;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+  
+.dropdown-content a:hover{
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: #B7410E;
+    transform: scale(1.05);
+    transition: transform 0.5s ease, color 0.5s ease; /* Adiciona transições para a transformação e cor */
+}
+
+.dropdown-content a:not(:hover) {
+    transition: transform 0.5s; /* Transição mais lenta para voltar ao tamanho original */
+}
+
+.show{
+    display:grid;
+}
+
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.container {
+    position: relative;
+    width: 1920px;
+    height: 1300px;
+    background-color: black;
+}
+
+#imagemFundo{
+    opacity: 80%;
+}
+
+.AlmaContainers{
+    position: absolute;
+    top: 6%;
+    left: 930px;
+    transform: translate(-50%, -50%); /*ponto de começo da tela é no centro da tela*/
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 506px;
+    height: 230px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.AlmaContainers h6{
+    color: #B7410E;
+    font-size: 50px;
+    margin-left: 15px; 
+}
+
+.SobreContainer{
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    width: 414px;
+    height: 143px;
+    transform: translate(-50%, -50%); /*ponto de começo da tela é no centro da tela */
+    color: white;
+}
+
+.SobreContainer p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.SobreContainer h6{
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+#CatalogoInicial{
+    position: absolute;
+    color: white;
+    width: 414px;
+    height: 143px;
+    top: 41%;
+    right: 6%;
+    text-align: center;
+}
+
+#CatalogoInicial h4{
+    font-size: 25px;
+}
+
+.link{
+    text-decoration: none;
+    position: absolute;
+    top: 49%;
+    right: 185px;
+    text-align: center;
+    width: 269px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    display: flex; /*faz o texto ficar centralizado no circulo branco*/
+}
+
+.link p{
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #B7410E, #D88B6A);
+    background-clip: text; /*faz com que apenas o texto fique com degradê*/
+    -webkit-text-fill-color: transparent;
+}
+
+.link:hover {
+    background: linear-gradient(to right, #B7410E, #D88B6A); /* Aplica degradê no hover */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho no hover */
+    transition: transform 0.4s; 
+}
+
+.link:hover p{
+    -webkit-text-fill-color: white;
+    transition: transform 0.4s; 
+}
+
+.link:not(:hover) {
+    transition: transform 0.4s ease; /* Transição mais lenta para voltar ao tamanho original */
+}
+
+.trabalhos{
+    position: absolute;
+    width: 505px;
+    height: 470px;
+    background-color: white;
+    left: 678px;
+    top: 57%;
+    text-align: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.trabalhos p{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.trabalhos img{
+    margin-top: 20px;
+    display: flex;
+    width: 390px;
+    height: 365px;
+    margin-left: 57px;
+}
+
+.trabalhos figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.SetaDireita{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    right: 10px;
+    user-select: none;
+    color: #D8A66A;
+}
+
+.SetaEsquerda{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    left: 10px;
+    user-select: none;
+    color: #D8A66A;
+}
+
+.curiosidades h3{
+   margin: 70px 0 0 520px;
+   font-size: xx-large;
+   color: white;
+}
+
+.comprar{
+    width: 400px;
+    height: 730px;
+    margin-left: 300px;
+    text-align: center;
+    background-color:#D8A66A;
+    border-radius: 20px;
+    user-select: none;
+    color: white; /*MUDAR QLQR COISA*/
+}
+
+.comprar:hover{
+    transform: translateY(-15px);
+    transition: 0.5s;
+    box-shadow: -1px 15px 10px #B7410E, 15px 20px 20px #B7410E; /* Adiciona sombras à esquerda e à direita */
+    color: black;
+}
+
+.comprar:not(:hover) {
+    transition: transform 0.3s ease; /* Transição mais lenta para voltar ao tamanho original */
+}
+
+.comprar h4{
+    margin-top: 55px;
+    font-size: large;
+    padding-top: 50px;
+}
+
+.comprar ul{
+    padding: 0 50px;
+    font-size: large;
+}
+
+.alugar{
+    width: 446px;
+    height: 730px;
+    background-color: #D8A66A;
+    margin-left: 1100px;
+    margin-top: -784px;
+    border-radius: 20px;
+    text-align: center;
+    user-select: none;
+    color: white; /*MUDAR QLQR COISA*/
+}
+
+.alugar:hover{
+    transform: translateY(-15px);
+    transition: 0.5s;
+    box-shadow: -1px 15px 10px #B7410E, 20px 20px 20px #B7410E; /* Adiciona sombras à esquerda e à direita */
+    color: black;
+}
+
+.alugar:not(:hover) {
+    transition: transform 0.3s ease; /* Transição mais lenta para voltar ao tamanho original */
+}
+
+.alugar h4{
+    margin-top: 55px;
+    font-size: large;
+    padding-top: 50px;
+}
+
+.alugar ul{
+    padding: 0 50px;
+    font-size: large;
+}
+
+.Catalogo2{
+    width: 1307px;
+    height: 500px;
+    transform: translateX(22%);
+    text-align: center;
+    margin-top: 200px;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+.link2{
+    text-decoration: none;
+    position: absolute;
+    left: 365px;
+    text-align: center;
+    width: 550px;
+    height: 85px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.link2 p{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-top: 18px; 
+}
+
+.link2:hover {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho no hover */
+    transition: transform 0.4s; 
+    box-shadow: 1px 10px 15px rgb(44, 44, 44);
+}
+
+.link2:not(:hover) {
+    transition: transform 0.4s ease; /* Transição mais lenta para voltar ao tamanho original */
+}
+
+.RedesSociais{
+    transform: translateX(10%);
+    width: 1550px;
+    height: 680px;
+    background-color: #D8A66A;
+    margin: 0;
+    border-radius: 30px;
+}
+
+#conclusao{
+    width: 600px;
+    height: 200px;
+    font-size: 27px;
+    font-weight: 600;
+    padding-top: 150px;
+    padding-left: 150px;
+    text-align: center;
+    border: 0;
+    color: white; /*MUDAR QLQR COISA*/
+}
+
+#conclusao p{
+    margin: 0;
+}
+
+#contatos {
+    width: 690px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+#contatos a{
+    margin: 0 20px; /* Adicione um espaçamento entre as imagens */
+}
+
+#insta{
+    width: 80px;
+    height: 76px;
+}
+
+#email{
+    width: 100px;
+    height: 90px;
+}
+
+#wpp{
+    width: 88px;
+    height: 90px;
+}
+
+.IAimage img{
+    transform: translate(208%, -93%);
+    width: 470px;
+    height: 470px;
+
+}
+
+.IAimage figcaption{
+    font-weight: bold;
+    width: 220px;
+    transform: translate(504%, -2400%);
+}
+
+.perguntas{
+    transform: translateX(37%);
+    margin-top: 200px;
+    color: white;
+}
+
+.perguntas h1{
+    font-size: 50px;
+}
+
+.perguntas h4{
+    font-size: 30px;
+    margin-left: -190px;
+}
+
+.faq-question{
+    width: 350px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: -400px;
+    font-size: 30px;
+    user-select: none;
+}
+
+.icon{
+    margin-right: 10px;
+}
+  
+.faq-answer{
+    padding: 10px;
+    display: none;
+    margin-left: -365px;
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+footer h4{
+    transform: translate(40%, -1215%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rodape {
+    transform: translateX(40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
+    padding-top: 80px;
+}
+
+#rodape img {
+    width: 300px;
+    height: 270px;
+    margin-bottom: 15px;
+}
+
+#rodape #insta, 
+#rodape #email, 
+#rodape #wpp {
+    transform: translate(-1000%, 800%);
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+#itensSite{
+    width: 130px;
+    height: 250px;
+    transform: translate(700%, -55%);
+}
+
+#itensSite p{
+    font-size: 20px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#itensSite a{
+    display: grid;
+    margin: 25px 0;
+    text-decoration: none;
+    color: black;
+}
+
+#contato{
+    width: 220px;
+    height: 150px;
+    transform: translate(620%, -260%);
+}
+
+#contato p{
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#contato a{
+    text-decoration: none;
+    color: black;
+}

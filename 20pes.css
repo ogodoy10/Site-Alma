@@ -1,3 +1,5 @@
+/*COLOCAR AS 6 FOTOS DOS CONTAINERS DE 20 PÉS*/
+
 *{
     box-sizing: border-box;
 }
@@ -14,6 +16,9 @@ body{
     background-color: #D88B6A;
 }
 
+
+
+/*CÓDIGOS PARA TUDO DENTRO DA NAV*/
 nav{
     width: 100%;
     height: 110px;
@@ -108,6 +113,15 @@ button{
     margin-bottom: 30px;
 }
 
+
+
+/*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM CORTADA*/
+main h1{
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
 .container {
     position: relative;
     width: 1920px;
@@ -135,7 +149,7 @@ button{
 
 .definicao20pes{
     position: absolute;
-    transform: translateY(-140%);
+    transform: translateY(-135%);
     width: 780px;
     height: 388px;
     left: 5%;
@@ -196,8 +210,219 @@ button{
     transition: 0.5s;
 }
 
-.infos{
+
+/*CÓDIGOS PARA AS INFORMAÇÕES NO CORPO DA PÁGINA*/
+#containerInfos{
+    display: grid;
     text-align: center;
+    font-size: 25px;
+    margin-top: 70px;
+    width: 1400px;
+    transform: translate(17%);
+    font-family: 'Montserrat', Arial, sans-serif; 
+}
+
+#containerInfos h1{
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+#especificacoes h3{
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+#especificacoes li{
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+
+
+/*CÓDIGOS PARA A BOX DE ACESSO RÁPIDO PARA OS CONTAINERS DE 40 PÉS*/
+#box40pes{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(189, 189, 189);
+    transform: translate(365%, -292%);
+    border-radius: 50px;
+}
+
+
+#box40pes p{
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#box40pes a > p{
+    text-align: center;
+    background-color: white;
+    margin-left: 25px;
+    width: 250px;
+    font-size: 20px;
+    border-radius: 40px;
+    box-shadow: 1px 5px 5px rgb(44, 44, 44);
+}
+
+#box40pes a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+} 
+
+#box40pes a > p:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+
+
+
+/*CÓDIGOS DA BOX DAS REDES SOCIAIS E COM IMAGEM ILUSTRATIVA*/
+.RedesSociais{
+    transform: translate(10%, -35%);
+    width: 1550px;
+    height: 680px;
+    background-color: #D8A66A;
+    margin: 0;
+    border-radius: 30px;
+}
+
+#conclusao{
+    width: 600px;
+    height: 200px;
+    font-size: 27px;
+    font-weight: bold;
+    padding-top: 150px;
+    padding-left: 150px;
     margin-top: 100px;
-    color: white;
+    text-align: center;
+    border: 0;
+    color: white; /*MUDAR QLQR COISA*/
+}
+
+#conclusao p{
+    margin: 0;
+}
+
+#contatos {
+    width: 690px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+#contatos a{
+    margin: 0 20px; /* Adicione um espaçamento entre as imagens */
+}
+
+#insta{
+    width: 80px;
+    height: 76px;
+}
+
+#email{
+    width: 100px;
+    height: 90px;
+}
+
+#wpp{
+    width: 88px;
+    height: 90px;
+}
+
+.IAimage{
+    transform: translate(208%, -93%);
+    width: 470px;
+    height: 470px;
+
+}
+
+.RedesSociais figcaption{
+    font-weight: bold;
+    width: 220px;
+    transform: translate(504%, -2400%);
+}
+
+
+
+/*CÓDIGOS DO RODAPÉ DA PAGINA DE 20 PÉS*/
+footer{
+    width: 100%;
+    height: 451px;
+    background-color: white;
+}
+
+footer h4{
+    transform: translate(40%, -1215%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rodape {
+    transform: translateX(40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
+    padding-top: 80px;
+}
+
+#rodape img {
+    width: 300px;
+    height: 270px;
+    margin-bottom: 15px;
+}
+
+#rodape #insta, 
+#rodape #email, 
+#rodape #wpp {
+    transform: translate(-1000%, 800%);
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+#itensSite{
+    width: 130px;
+    height: 250px;
+    transform: translate(700%, -55%);
+}
+
+#itensSite p{
+    font-size: 20px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#itensSite a{
+    display: grid;
+    margin: 25px 0;
+    text-decoration: none;
+    color: black;
+}
+
+#contato{
+    width: 220px;
+    height: 150px;
+    transform: translate(620%, -260%);
+}
+
+#contato p{
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#contato a{
+    text-decoration: none;
+    color: black;
 }

@@ -116,12 +116,6 @@ button{
 
 
 /*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM CORTADA*/
-main h1{
-    text-align: center;
-    margin-top: 50px;
-    color: black;
-}
-
 .container {
     position: relative;
     width: 1920px;

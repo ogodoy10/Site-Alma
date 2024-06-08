@@ -212,6 +212,7 @@ button{
     font-size: 25px;
     margin-top: 70px;
     width: 1400px;
+    height: 1400px;
     transform: translate(17%);
     font-family: 'Montserrat', Arial, sans-serif; 
 }
@@ -273,15 +274,154 @@ button{
 }
 
 
+/*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS E SEMI-NOVOS*/
+
+#imagensContainers{
+    display: flex;
+    margin-left: 5%;
+}
+
+.ContainersUsados{
+    width: 700px;
+    height: 550px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.ContainersUsados p{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.image-container20{
+    display: none;
+}
+
+.image-container20 img{
+    margin-top: 20px;
+    width: 600px;
+    height: 440px;
+}
+
+.image-container20 #img3{
+    margin-top: 5px;
+    width: 500px;
+    height: 700px;
+}
+
+.image-container20.active {
+    display: block;
+}
+
+.ContainersUsados figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.seta-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-1400%);
+}
+
+.SetaDireita, .SetaEsquerda {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+    color: #D8A66A;
+}
+
+.SetaDireita {
+    margin-right: 15px;
+}
+
+.SetaEsquerda {
+    margin-left: 10px;
+}
+
+
+/*CÓDIGOS DA BOX CONTAINERS SEMI-NOVOS*/
+.ContainersSemiNovos{
+    width: 700px;
+    height: 550px;
+    background-color: white;
+    margin-left: 15%;
+    text-align: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.ContainersSemiNovos p{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.imageContainer-SemiNovo{
+    display: none;
+}
+
+.imageContainer-SemiNovo img{
+    margin-top: 20px;
+    width: 600px;
+    height: 440px;
+}
+
+.imageContainer-SemiNovo #img3{
+    margin-top: 5px;
+    width: 500px;
+    height: 700px;
+}
+
+.imageContainer-SemiNovo.ativa {
+    display: block;
+}
+
+.ContainersSemiNovos figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.seta-containerSemiNovo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    transform: translateY(-1400%);
+}
+
+.SetaDireita-SemiNovo, .SetaEsquerda-SemiNovo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+    color: #D8A66A;
+}
+
+.SetaDireita-SemiNovo {
+    margin-right: 15px;
+}
+
+.SetaEsquerda-SemiNovo {
+    margin-left: 10px;
+}
 
 
 /*CÓDIGOS DA BOX DAS REDES SOCIAIS E COM IMAGEM ILUSTRATIVA*/
 .RedesSociais{
-    transform: translate(10%, -35%);
+    margin-left: 8%;
+    margin-bottom: 5%;
     width: 1550px;
     height: 680px;
     background-color: #D8A66A;
-    margin: 0;
     border-radius: 30px;
 }
 

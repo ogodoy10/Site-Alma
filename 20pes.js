@@ -21,17 +21,20 @@ window.onclick = function(event) {
 
 //função para fazer a box "containers usados" funcionar  
 let currentImageIndex = 0;
-const images = document.querySelectorAll('.image-container20');
-const container = document.querySelector('.ContainersUsados');
+const images = document.querySelectorAll('.image-container20'); //Variável para armazenar as imagens 
+const container = document.querySelector('.ContainersUsados'); //Variável para armazenar toda a div dos containers usados
+const seta = document.querySelector('.seta-container'); //Variável para armazenar as setas que ficam ao lado das imgs
 
 function showImage(index) {
     images.forEach((img, i) => {
-        if (i === index) {
+        if (i === index){
             img.classList.add('active');
-            if (img.querySelector('img').id === 'img3') {
-                container.style.height = '810px';  // Ajuste a altura conforme necessário
+            if (img.querySelector('img').id === 'img3'){
+                container.style.height = '815px';  //Ajusta a altura do container para a 3º imagem, pois ela esta na vertical
+                seta.style.transform = 'translateY(-2000%)';  //Centraliza as setas para a 3º imagem
             } else {
-                container.style.height = '565px';
+                container.style.height = '565px'; //Reajusta a altura do container para as outras imagens, após a 3º imagem passar
+                seta.style.transform = 'translateY(-1400%)';  //Reajusta as setas para sua centralização padrão após a 3º imagem passar
             }
         } else {
             img.classList.remove('active');
@@ -39,12 +42,12 @@ function showImage(index) {
     });
 }
 
-function nextImage() {
+function nextImage(){ //função para passar para a próxima img
     currentImageIndex = (currentImageIndex + 1) % images.length;
     showImage(currentImageIndex);
 }
 
-function lastImage() {
+function lastImage(){ //função para voltar para a img anterior 
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     showImage(currentImageIndex);
 }
@@ -55,20 +58,23 @@ showImage(currentImageIndex);
 
 
 
+
 //função para fazer a box "containers semi-novos" funcionar  
-// Containers Semi-Novos
 let currentImageIndexSemiNovo = 0;
-const imagesSemiNovo = document.querySelectorAll('.imageContainer-SemiNovo');
-const containerSemiNovo = document.querySelector('.ContainersSemiNovos');
+const imagesSemiNovo = document.querySelectorAll('.imageContainer-SemiNovo'); //Variável para armazenar as imagens
+const containerSemiNovo = document.querySelector('.ContainersSemiNovos'); //Variável para armazenar toda a div dos containers SemiNovos
+const setaSemiNovo = document.querySelector('.seta-containerSemiNovo'); //Variável para armazenar as setas que ficam ao lado das imgs
 
 function showImageSemiNovo(index) {
     imagesSemiNovo.forEach((img, i) => {
         if (i === index) {
             img.classList.add('ativa');
             if (img.querySelector('img').id === 'img3') {
-                containerSemiNovo.style.height = '810px';  // Ajuste a altura conforme necessário
+                containerSemiNovo.style.height = '815px';  // Ajuste a altura conforme necessário
+                setaSemiNovo.style.transform = 'translateY(-2000%)';
             } else {
                 containerSemiNovo.style.height = '565px';
+                setaSemiNovo.style.transform = 'translateY(-1400%)';
             }
         } else {
             img.classList.remove('ativa');

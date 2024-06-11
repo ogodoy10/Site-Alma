@@ -1,4 +1,4 @@
-/*COLOCAR AS 6 FOTOS DOS CONTAINERS DE 20 PÉS*/
+/*TERMINAR DE AJEITAR AS BOXES E VER A ALTURA DAS SETAS NA IMG 3*/
 
 *{
     box-sizing: border-box;
@@ -274,15 +274,15 @@ button{
 }
 
 
-/*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS E SEMI-NOVOS*/
 
+/*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS*/
 #imagensContainers{
     display: flex;
     margin-left: 5%;
 }
 
 .ContainersUsados{
-    width: 700px;
+    width: 750px;
     height: 550px;
     background-color: white;
     text-align: center;
@@ -302,34 +302,35 @@ button{
 
 .image-container20 img{
     margin-top: 20px;
-    width: 600px;
+    width: 650px;
     height: 440px;
+    border-radius: 5px;
 }
 
 .image-container20 #img3{
     margin-top: 5px;
-    width: 500px;
+    width: 580px;
     height: 700px;
 }
 
-.image-container20.active {
+.image-container20.active{
     display: block;
 }
 
-.ContainersUsados figcaption {
+.ContainersUsados figcaption{
     text-align: center;
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
-.seta-container {
+.seta-container{
     display: flex;
     justify-content: space-between;
     width: 100%;
     transform: translateY(-1400%);
 }
 
-.SetaDireita, .SetaEsquerda {
+.SetaDireita, .SetaEsquerda{
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -338,21 +339,22 @@ button{
     color: #D8A66A;
 }
 
-.SetaDireita {
+.SetaDireita{
     margin-right: 15px;
 }
 
-.SetaEsquerda {
+.SetaEsquerda{
     margin-left: 10px;
 }
 
 
+
 /*CÓDIGOS DA BOX CONTAINERS SEMI-NOVOS*/
 .ContainersSemiNovos{
-    width: 700px;
+    width: 750px;
     height: 550px;
     background-color: white;
-    margin-left: 15%;
+    margin-left: 10%;
     text-align: center;
     border-radius: 10px;
     user-select: none;
@@ -370,13 +372,14 @@ button{
 
 .imageContainer-SemiNovo img{
     margin-top: 20px;
-    width: 600px;
+    width: 650px;
     height: 440px;
+    border-radius: 5px;
 }
 
 .imageContainer-SemiNovo #img3{
     margin-top: 5px;
-    width: 500px;
+    width: 580px;
     height: 700px;
 }
 
@@ -387,7 +390,7 @@ button{
 .ContainersSemiNovos figcaption {
     text-align: center;
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .seta-containerSemiNovo{
@@ -413,6 +416,7 @@ button{
 .SetaEsquerda-SemiNovo {
     margin-left: 10px;
 }
+
 
 
 /*CÓDIGOS DA BOX DAS REDES SOCIAIS E COM IMAGEM ILUSTRATIVA*/
@@ -514,13 +518,19 @@ footer h4{
     height: 270px;
     margin-bottom: 15px;
 }
-
-#rodape #insta, 
+ 
 #rodape #email, 
 #rodape #wpp {
     transform: translate(-1000%, 800%);
     width: 20px;
     height: 20px;
+    margin: 0 5px;
+}
+
+#rodape #insta{
+    transform: translate(-1350%, 1071%);
+    width: 15px;
+    height: 15px;
     margin: 0 5px;
 }
 

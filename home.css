@@ -524,12 +524,18 @@ footer h4{
     margin-bottom: 15px;
 }
 
-#rodape #insta, 
 #rodape #email, 
 #rodape #wpp {
     transform: translate(-1000%, 800%);
     width: 20px;
     height: 20px;
+    margin: 0 5px;
+}
+
+#rodape #insta{
+    transform: translate(-1350%, 1065%);
+    width: 15px;
+    height: 15px;
     margin: 0 5px;
 }
 

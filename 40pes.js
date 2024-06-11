@@ -19,50 +19,74 @@ window.onclick = function(event) {
 
 
 //função para fazer a box "containers usados" funcionar  
-let currentImage = 0;
-const images = document.querySelectorAll('.ContainersUsados img');
-const captions = document.querySelectorAll('.ContainersUsados figcaption');
+let currentImageIndex = 0;
+const images = document.querySelectorAll('.image-container40'); //Variável para armazenar as imagens 
+const container = document.querySelector('.ContainersUsados'); //Variável para armazenar toda a div dos containers usados
+const seta = document.querySelector('.seta-container'); //Variável para armazenar as setas que ficam ao lado das imgs
 
 function showImage(index) {
     images.forEach((img, i) => {
-        img.style.display = i === index ? 'block' : 'none';
-        captions[i].style.display = i === index ? 'block' : 'none';
+        if (i === index){
+            img.classList.add('active');
+            if (img.querySelector('img').id === 'img3'){
+                container.style.height = '815px';  //Ajusta a altura do container para a 3º imagem, pois ela esta na vertical
+                seta.style.transform = 'translateY(-2000%)';  //Centraliza as setas para a 3º imagem
+            } else {
+                container.style.height = '565px'; //Reajusta a altura do container para as outras imagens, após a 3º imagem passar
+                seta.style.transform = 'translateY(-1400%)';  //Reajusta as setas para sua centralização padrão após a 3º imagem passar
+            }
+        } else {
+            img.classList.remove('active');
+        }
     });
 }
 
-function nextImage() {
-    currentImage = (currentImage + 1) % images.length;
-    showImage(currentImage); //função para mostrar a imagem que vem a seguir 
+function nextImage(){ //função para passar para a próxima img
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    showImage(currentImageIndex);
 }
 
-function lastImage() {
-  currentImage = (currentImage - 1 + images.length) % images.length;
-  showImage(currentImage); //função para mostrar a imagem anterior da que esta sendo mostrada na tela
+function lastImage(){ //função para voltar para a img anterior 
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    showImage(currentImageIndex);
 }
-// Exibe a primeira imagem ao carregar a página
-showImage(currentImage);
+
+// Mostrar a primeira imagem ao carregar a página
+showImage(currentImageIndex);
 
 
 //função para fazer a box "containers semi-novos" funcionar  
-let ImagemAtual = 0;
-const imagens = document.querySelectorAll('.ContainersSemiNovos img');
-const descricao = document.querySelectorAll('.ContainersSemiNovos figcaption');
+let currentImageIndexSemiNovo = 0;
+const imagesSemiNovo = document.querySelectorAll('.imageContainer-SemiNovo'); //Variável para armazenar as imagens
+const containerSemiNovo = document.querySelector('.ContainersSemiNovos'); //Variável para armazenar toda a div dos containers SemiNovos
+const setaSemiNovo = document.querySelector('.seta-containerSemiNovo'); //Variável para armazenar as setas que ficam ao lado das imgs
 
-function mostrarImagem(index) {
-    imagens.forEach((img, i) => {
-        img.style.display = i === index ? 'block' : 'none';
-        descricao[i].style.display = i === index ? 'block' : 'none';
+function showImageSemiNovo(index) {
+    imagesSemiNovo.forEach((img, i) => {
+        if (i === index) {
+            img.classList.add('ativa');
+            if (img.querySelector('img').id === 'img3') {
+                containerSemiNovo.style.height = '815px';  // Ajuste a altura conforme necessário
+                setaSemiNovo.style.transform = 'translateY(-2000%)';
+            } else {
+                containerSemiNovo.style.height = '565px';
+                setaSemiNovo.style.transform = 'translateY(-1400%)';
+            }
+        } else {
+            img.classList.remove('ativa');
+        }
     });
 }
 
-function ProximaImagem() {
-    ImagemAtual = (ImagemAtual + 1) % imagens.length;
-    mostrarImagem(ImagemAtual); //função para mostrar a imagem que vem a seguir 
+function nextImageSemiNovo() {
+    currentImageIndexSemiNovo = (currentImageIndexSemiNovo + 1) % imagesSemiNovo.length;
+    showImageSemiNovo(currentImageIndexSemiNovo);
 }
 
-function UltimaImagem() {
-  ImagemAtual = (ImagemAtual - 1 + imagens.length) % imagens.length;
-  mostrarImagem(ImagemAtual); //função para mostrar a imagem anterior da que esta sendo mostrada na tela
+function lastImageSemiNovo() {
+    currentImageIndexSemiNovo = (currentImageIndexSemiNovo - 1 + imagesSemiNovo.length) % imagesSemiNovo.length;
+    showImageSemiNovo(currentImageIndexSemiNovo);
 }
-// Exibe a primeira imagem ao carregar a página
-mostrarImagem(ImagemAtual);
+
+// Mostrar a primeira imagem ao carregar a página
+showImageSemiNovo(currentImageIndexSemiNovo);

@@ -222,18 +222,18 @@ button{
 
 
 
-/*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS E SEMI-NOVOS*/
+/*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS*/
 
 #imagensContainers{
     display: flex;
-    margin-left: 15%;
+    margin-left: 5%;
+    margin-top: 10%;
 }
 
 .ContainersUsados{
-    width: 505px;
-    height: 470px;
+    width: 750px;
+    height: 550px;
     background-color: white;
-    margin-top: 10%;
     text-align: center;
     border-radius: 10px;
     user-select: none;
@@ -245,47 +245,64 @@ button{
     margin: 20px 0;
 }
 
-.ContainersUsados img{
-    margin-top: 20px;
-    display: flex;
-    width: 390px;
-    height: 365px;
-    margin-left: 57px;
+.image-container40{
+    display: none;
 }
 
-.ContainersUsados figcaption {
+.image-container40 img{
+    margin-top: 20px;
+    width: 650px;
+    height: 440px;
+    border-radius: 5px;
+}
+
+.image-container40 #img3{
+    margin-top: 5px;
+    width: 580px;
+    height: 700px;
+}
+
+.image-container40.active{
+    display: block;
+}
+
+.ContainersUsados figcaption{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: 19px;
+}
+
+.seta-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-1400%);
+}
+
+.SetaDireita, .SetaEsquerda{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+    color: #D8A66A;
 }
 
 .SetaDireita{
-    top: 50%;
-    transform: translate(45%, -725%);
-    cursor: pointer;
-    font-size: 30px;
-    right: 10px;
-    user-select: none;
-    color: #D8A66A;
+    margin-right: 15px;
 }
 
 .SetaEsquerda{
-    top: 50%;
-    transform: translate(-45%, -755%);
-    cursor: pointer;
-    font-size: 30px;
-    left: 10px;
-    user-select: none;
-    color: #D8A66A;
+    margin-left: 10px;
 }
 
 
 /*CÓDIGOS DA BOX CONTAINERS SEMI-NOVOS*/
 .ContainersSemiNovos{
-    width: 505px;
-    height: 470px;
+    width: 750px;
+    height: 550px;
     background-color: white;
-    margin-left: 20%;
-    margin-top: 10%;
+    margin-left: 10%;
     text-align: center;
     border-radius: 10px;
     user-select: none;
@@ -297,37 +314,55 @@ button{
     margin: 20px 0;
 }
 
-.ContainersSemiNovos img{
+.imageContainer-SemiNovo{
+    display: none;
+}
+
+.imageContainer-SemiNovo img{
     margin-top: 20px;
-    display: flex;
-    width: 390px;
-    height: 365px;
-    margin-left: 57px;
+    width: 650px;
+    height: 440px;
+    border-radius: 5px;
 }
 
-.ContainersSemiNovos figcaption {
+.imageContainer-SemiNovo #img3{
+    margin-top: 5px;
+    width: 580px;
+    height: 700px;
+}
+
+.imageContainer-SemiNovo.ativa{
+    display: block;
+}
+
+.ContainersSemiNovos figcaption{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: 19px;
 }
 
-.Direita{
-    top: 50%;
-    transform: translate(45%, -715%);
+.seta-containerSemiNovo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    transform: translateY(-1400%);
+}
+
+.SetaDireita-SemiNovo, .SetaEsquerda-SemiNovo {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     font-size: 30px;
-    right: 10px;
     user-select: none;
     color: #D8A66A;
 }
 
-.Esquerda{
-    top: 50%;
-    transform: translate(-45%, -750%);
-    cursor: pointer;
-    font-size: 30px;
-    left: 10px;
-    user-select: none;
-    color: #D8A66A;
+.SetaDireita-SemiNovo {
+    margin-right: 15px;
+}
+
+.SetaEsquerda-SemiNovo {
+    margin-left: 10px;
 }
 
 
@@ -382,8 +417,7 @@ button{
     height: 200px;
     font-size: 27px;
     font-weight: bold;
-    padding-top: 80px;
-    padding-left: 150px;
+    padding: 150px 0 0 150px;
     margin-top: 100px;
     text-align: center;
     border: 0;
@@ -400,12 +434,11 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    margin-left: 30px;
+    margin: 150px 0 0 30px;
 }
 
 #contatos a{
-    margin: 0 20px; /* Adicione um espaçamento entre as imagens */
+    margin: 0 20px; /*Adiciona um espaçamento entre as imagens*/
 }
 
 #insta{
@@ -450,7 +483,7 @@ footer h4{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#rodape {
+#rodape{
     transform: translateX(40%);
     display: flex;
     justify-content: center;
@@ -461,18 +494,24 @@ footer h4{
     padding-top: 80px;
 }
 
-#rodape img {
+#rodape img{
     width: 300px;
     height: 270px;
     margin-bottom: 15px;
 }
-
-#rodape #insta, 
+ 
 #rodape #email, 
-#rodape #wpp {
+#rodape #wpp{
     transform: translate(-1000%, 800%);
     width: 20px;
     height: 20px;
+    margin: 0 5px;
+}
+
+#rodape #insta{
+    transform: translate(-1350%, 1071%);
+    width: 15px;
+    height: 15px;
     margin: 0 5px;
 }
 

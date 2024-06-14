@@ -1,3 +1,5 @@
+/*COLOCAR AS IMAGENS CORRETAS NAS BOXES DE USADOS E SEMI NOVOS E COMEÇAR A PÁGINA DE CONTATO*/
+
 *{
     box-sizing: border-box;
 }
@@ -38,27 +40,35 @@ nav img{
 nav a{
     color: black; /* Define a cor do texto para branco */
     text-decoration: none; /* Remove sublinhado dos links */
-    margin-top: 35px;
+    margin-top: 29px;
 }
 
-nav a.home{
-    margin-left: 380px; /* Move o link HOME para a esquerda */
-}
-
-nav summary{
-    margin-left: 200px;
-    margin-top: 35px;
+.home{
+    margin-left: 370px; /* Move o link HOME para a esquerda */
+    height: 40px;
+    padding: 7px;
 }
 
 .contato{
     margin-left: 200px;
+    height: 40px;
+    padding: 7px;
+}
+
+.home:hover, .contato:hover, .dropbtn:hover{
+    background-color: #B7410E;
+    border-radius: 4px;
+    transition: 0.3s;
+    color: white;
+    transform: translateY(-5px);
+    
 }
 
 .dropdown{
     position: relative;
     display: inline-block;
     margin-left: 200px;
-    margin-top: 35px;
+    margin-top: 29px;
 }
 
 .dropbtn{
@@ -66,6 +76,8 @@ nav summary{
     line-height: normal;
     padding: 0;
     cursor: pointer;
+    height: 40px;
+    padding: 7px;
 }
 
 .dropdown-content{
@@ -78,6 +90,7 @@ nav summary{
     left: -30px;
     padding: 15px;
     transition: 0.5s;
+    margin-top: -20px;
 }
 
 .dropdown-content a{
@@ -479,7 +492,7 @@ footer{
 }
 
 footer h4{
-    transform: translate(40%, -1215%);
+    transform: translate(40%, -1615%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -502,14 +515,14 @@ footer h4{
  
 #rodape #email, 
 #rodape #wpp{
-    transform: translate(-1000%, 800%);
+    transform: translate(-955%, 800%);
     width: 20px;
     height: 20px;
     margin: 0 5px;
 }
 
 #rodape #insta{
-    transform: translate(-1350%, 1071%);
+    transform: translate(-1280%, 1070%);
     width: 15px;
     height: 15px;
     margin: 0 5px;
@@ -537,12 +550,12 @@ footer h4{
 #contato{
     width: 220px;
     height: 150px;
-    transform: translate(620%, -260%);
+    transform: translate(620%, -313%);
 }
 
 #contato p{
     font-size: 20px;
-    margin: 10px 0;
+    margin-top: 80px;
     font-weight: 300;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -550,4 +563,5 @@ footer h4{
 #contato a{
     text-decoration: none;
     color: black;
+    margin-left: 10px;
 }

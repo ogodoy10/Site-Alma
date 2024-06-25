@@ -1,3 +1,5 @@
+/*TERMINAR O DESIGN DA PÁGINA CONTATO*/
+
 *{
     box-sizing: border-box;
 }
@@ -52,7 +54,6 @@ nav a{
 }
 
 .home:hover, .contato:hover, .dropbtn:hover{
-    background-color: #B7410E;
     border-radius: 4px;
     transition: 0.3s;
     color: white;
@@ -123,10 +124,10 @@ button{
 
 /*CÓDIGOS DA BOX COM OS MEIOS DE CONTATO*/
 #box{
-    width: 1600px;
+    width: 1200px;
     height: 480px;
-    background-color: #ddd;
-    margin-left: 7%;
+    background-color: #ba5b32;
+    margin-left: 15%;
 }
 
 #box h1{
@@ -135,14 +136,57 @@ button{
     font-size: 40px;
 }
 
-#box p{
+#p1{
     font-size: 20px;
-    padding: 40px 50px;
+    margin: 80px 70px;
+    width: 285px;
+}
+
+#p2{
+    font-size: 20px;
+    margin-left: 70px;
+    width: 220px;    
+}
+
+#p3{
+    font-size: 20px;
+    margin: 80px 70px;
+    width: 222px;
+}
+
+#p1:hover{
+    transform: translateX(5%);
+    transition: 0.4s;
+}
+
+#ap1:hover{
+    color: #D8A66A;
+    text-decoration:underline;
+}
+
+#p2:hover{
+    transform: translateX(5%);
+    transition: 0.4s;
+}
+
+#ap2:hover{
+    color: #D8A66A;
+    text-decoration: underline;
+}
+
+#p3:hover{
+    transform: translateX(5%);
+    transition: 0.4s;
+}
+
+#ap3:hover{
+    color: #D8A66A;
+    text-decoration: underline;
 }
 
 #box a{
     text-decoration: none;
-    color: red;
+    color: #89C3FF;
 }
 
 

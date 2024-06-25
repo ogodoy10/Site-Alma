@@ -1,5 +1,3 @@
-/*COLOCAR AS IMAGENS CORRETAS NAS BOXES DE USADOS E SEMI NOVOS E COMEÇAR A PÁGINA DE CONTATO*/
-
 *{
     box-sizing: border-box;
 }
@@ -56,7 +54,6 @@ nav a{
 }
 
 .home:hover, .contato:hover, .dropbtn:hover{
-    background-color: #B7410E;
     border-radius: 4px;
     transition: 0.3s;
     color: white;

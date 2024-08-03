@@ -590,7 +590,7 @@ html{
 
 
 /*FORMATAÇÃO PARA CELULAR*/
-@media(max-width: 450px){
+@media(max-width: 720px){ /*ORGANIZAR O CSS NOVAMENTE PARA LARGURA DE 720PX*/
     body{
         width: 100%;
         height: 100%;
@@ -802,6 +802,13 @@ html{
     .link:not(:hover) {
         transition: transform 0.4s ease; /* Transição mais lenta para voltar ao tamanho original */
     }
+
+
+    /*CÓDIGO DA BOX QUE MOSTRA OS TRABALHOS JÁ FEITOS*/
+    .trabalhos{
+        display: none;
+    }
+
 
     /*COMEÇO DA PARTE DO SITE SEM A IMAGEM DE FUNDO*/
     /*CÓDIGOS DAS DUAS LISTAS QUE MOSTRAM PONTOS POSITIVOS DE COMPRA E ALUGUEL*/
@@ -1019,17 +1026,17 @@ html{
 
     /*CÓDIGOS DO RODAPÉ DA PAGINA INICIAL*/
     footer{
-        width: 450px;
-        height: 400px;
+        width: 720px;
+        height: 360px;
         background-color: white;
         margin-top: 5%;
     }
     
     footer h4{
         font-family: Arial, Helvetica, sans-serif;
-        width: 350px;
-        margin-left: -100px;
-        margin-top: 250px;
+        width: 500px;
+        margin-left: -215px;
+        margin-top: -25px;
         text-align: center;
     }
     
@@ -1044,32 +1051,23 @@ html{
     }
     
     #rodape img{
-        width: 50px;
-        height: 50px;
-        margin-top: -190px;
-        margin-left: -180px;
+        width: 100px;
+        height: 100px;
+        margin-top: -165px;
+        margin-left: -200px;
     }
      
+    #rodape #insta,
     #rodape #email, 
     #rodape #wpp{
-        transform: translate(-440%, -720%);
-        width: 10px;
-        height: 10px;
-        margin: 0 2px;
+        display: none; /*VAI FAZER COM QUE NÃO APAREÇAM O INSTA, EMAIL E WPP EMBAIXO DO LOGO*/
     }
-    
-    #rodape #insta{
-        transform: translate(-565%, -915%);
-        width: 8px;
-        height: 8px;
-        margin: 0 2px;
-    }
-    
+
     #itensSite{
         width: 130px;
         height: 250px;
-        margin-left: -835px;
-        margin-top: -55px;
+        margin-left: -810px;
+        margin-top: -45px;
     }
     
     #itensSite p{
@@ -1088,13 +1086,13 @@ html{
     #contato{
         width: 210px;
         height: 150px;
-        margin-left: -1110px;
+        margin-left: -1050px;
         text-align: right;
     }
     
     #contato p{
         font-size: 20px;
-        margin-top: 81px;
+        margin-top: 82px;
         font-weight: 300;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }

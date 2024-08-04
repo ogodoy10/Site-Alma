@@ -1003,21 +1003,29 @@ html{
 
     /*CÓDIGOS DA BOX DAS REDES SOCIAIS E COM IMAGEM ILUSTRATIVA*/
     .RedesSociais{
-        width: 450px;
+        width: 350px;
         height: 470px;
         background-color: #D8A66A;
-        margin: 0;
+        margin-left: 63px;
         border-radius: 30px;
-        margin-left: 10px;
+    }
+
+    .IAimage{
+        display: none;
+    }
+
+    .RedesSociais figcaption{
+        display: none;
     }
     
     #conclusao{
-        width: 400px;
+        width: 350px;
         height: 200px;
-        font-size: 26px;
+        font-size: 25px;
+        padding: 30px 10px;
         padding-top: 60px;
-        padding-left: 60px;
-        text-align: center;
+        padding-left: 20px;
+        text-align: left;
         color: white; /*MUDAR QLQR COISA*/
     }
     
@@ -1025,14 +1033,14 @@ html{
         margin: 0;
     }
     
-    #contatos{
+    #contatos {
         width: 690px;
         height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-        margin-left: -115px;
+        margin-left: -170px;
     }
     
     #contatos a{

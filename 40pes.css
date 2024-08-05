@@ -123,14 +123,13 @@ html, body{
     }
     
     
-    /*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM CORTADA*/
-    
+    /*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM CORTADA*/ 
     .container{
         position: relative;
         width: 1920px;
         height: 650px;
-        background-image: url(./imagens40/Fundo40.png);
-        opacity: 80%;
+        background-color: black;
+        background-image: url('imagens40/imageFundo40.png');
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%); /*os dois primeiros 0 alteram a lateral esquerda e o topo da imagem, respectivamente, os dois numeros após a 1º virgula alteram o topo desgrudando ele da lateral direita, os dois numeros após a 2º virgula, alteram o tamanho do corte na diagonal a partir da lateral direita, e os ultimos dois numeros alteram o corte na diagonal mas a partir da lateral esquerda */
     }
     
@@ -150,15 +149,15 @@ html, body{
         position: absolute;
         width: 700px;
         height: 388px;
-        right: 8.5%;
+        top: 3%;
+        right: 11%;
         text-align: left;
     }
     
     .definicao40pes p{
-        opacity: 100%;
         margin-top: 22%;
         font-size: 35px;
-        color: aliceblue;
+        color: white;
         font-weight: bold;
     }
     
@@ -168,7 +167,8 @@ html, body{
         height: 350px;
         padding: 15px;
         background-color: white;
-        transform: translate(45%, -165%);
+        left: 12%;
+        top: 10%;
         border-radius: 20px;
     }
     
@@ -313,6 +313,7 @@ html, body{
         text-align: center;
         border-radius: 10px;
         user-select: none;
+        margin-bottom: 10px;
     }
     
     .ContainersSemiNovos p{

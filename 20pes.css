@@ -126,12 +126,12 @@ html{
     
     /*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM CORTADA*/
     .container {
-        background-image: url('./imagens20/fundo20.png');
+        background-color: black;
+        background-image: url('./imagens20/image2.png');
         position: relative;
         width: 1920px;
         height: 650px;
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); /*os dois primeiros 0 alteram a lateral esquerda e o topo da imagem, respectivamente, os dois numeros após a 1º virgula alteram o topo desgrudando ele da lateral direita, os dois numeros após a 2º virgula, alteram o tamanho do corte na diagonal a partir da lateral direita, e os ultimos dois numeros alteram o corte na diagonal mas a partir da lateral esquerda*/
-     
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); /*os dois primeiros 0 alteram a lateral esquerda e o topo da imagem, respectivamente, os dois numeros após a 1º virgula alteram o topo desgrudando ele da lateral direita, os dois numeros após a 2º virgula, alteram o tamanho do corte na diagonal a partir da lateral direita, e os ultimos dois numeros alteram o corte na diagonal mas a partir da lateral esquerda*/  
     }
     
     .container h1{
@@ -582,7 +582,7 @@ html{
 
 
 
-@media (max-width: 720px){
+@media screen and (max-width: 750px){
     body{
         width: 100%;
         height: 100%;

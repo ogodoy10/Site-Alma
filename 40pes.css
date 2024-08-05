@@ -8,557 +8,1107 @@ html, body{
     min-height: 100%;
 }
 
-body{
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #D88B6A;
-}
-
-
-
-/*CÓDIGOS PARA TUDO DENTRO DA NAV*/
-nav{
-    width: 100%;
-    height: 110px;
-    margin: 0;
-    display: flex;
-    background-color: #D8A66A;
-    padding: 10px; /* Adiciona um preenchimento interno para espaçamento */
-    user-select: none;
-    position: relative;
-    font-size: 20px;
-}
-
-nav img{
-    width: 204px;
-    height: 50%;
-    margin-top: 20px;
-}
-
-nav a{
-    color: black; /* Define a cor do texto para branco */
-    text-decoration: none; /* Remove sublinhado dos links */
-    margin-top: 29px;
-}
-
-.home{
-    margin-left: 370px; /* Move o link HOME para a esquerda */
-    height: 40px;
-    padding: 7px;
-}
-
-.contato{
-    margin-left: 200px;
-    height: 40px;
-    padding: 7px;
-}
-
-.home:hover, .contato:hover, .dropbtn:hover{
-    border-radius: 4px;
-    transition: 0.3s;
-    color: white;
-    transform: translateY(-5px);
+@media(max-width: 1920px){
+    body{
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #D88B6A;
+    }
     
-}
-
-.dropdown{
-    position: relative;
-    display: inline-block;
-    margin-left: 200px;
-    margin-top: 29px;
-}
-
-.dropbtn{
-    font-size: 0.9em;
-    line-height: normal;
-    padding: 0;
-    cursor: pointer;
-    height: 40px;
-    padding: 7px;
-}
-
-.dropdown-content{
-    display: none;
-    position: absolute;
-    width: 250px;
-    z-index: 1;
-    background-color: white;
-    border-radius: 5px;
-    left: -30px;
-    padding: 15px;
-    transition: 0.5s;
-    margin-top: -20px;
-}
-
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    margin-top: 5px;
-}
-  
-.dropdown-content a:hover{
-    background-color: #ddd;
-    border-radius: 5px;
-    transition: 0.5s;
-    color: #B7410E;
-    transform: scale(1.05);
-    transition: transform 0.5s ease, color 0.5s ease; /* Adiciona transições para a transformação e cor */
-}
-
-.dropdown-content a:not(:hover) {
-    transition: transform 0.5s; /* Transição mais lenta para voltar ao tamanho original */
-}
-
-.show{
-    display:grid;
-}
-
-button{
-    background: transparent;
-    border: none;
-    outline: none;
-    margin-bottom: 30px;
-}
-
-
-/*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM CORTADA*/
-
-.container{
-    position: relative;
-    width: 1920px;
-    height: 650px;
-    background-color: black;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%); /*os dois primeiros 0 alteram a lateral esquerda e o topo da imagem, respectivamente, os dois numeros após a 1º virgula alteram o topo desgrudando ele da lateral direita, os dois numeros após a 2º virgula, alteram o tamanho do corte na diagonal a partir da lateral direita, e os ultimos dois numeros alteram o corte na diagonal mas a partir da lateral esquerda */
-}
-
-#imagemFundo{
-    width: 100%;
-    height: 650px;
-    opacity: 75%;
-}
-
-.container h1{
-    position: absolute;
-    top: 6%;
-    right: 8%;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.definicao40pes{
-    position: absolute;
-    transform: translateY(-127%);
-    width: 700px;
-    height: 388px;
-    right: 9%;
-    text-align: left;
-}
-
-.definicao40pes p{
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-}
-
-#catalogo4{
-    position: absolute;
-    width: 400px;
-    height: 350px;
-    padding: 15px;
-    background-color: white;
-    transform: translate(45%, -165%);
-    border-radius: 20px;
-}
-
-#catalogo4 p{
-    text-align: center;
-    font-size: 25px;
-}
-
-.link4{
-    margin-top: 40px;
-    text-decoration: none;
-    position: absolute;
-    width: 320px;
-    height: 85px;
-    left: 10%;
-    border-radius: 20px;
-    background-color: #D8A66A;
-}
-
-.link4 p{
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-weight: 800;
-    padding-top: 5px;
-}
-
-.link4:hover {
-    transform: scale(1.1); /* Aumenta um pouco o tamanho no hover */
-    transition: transform 0.5s; 
-    box-shadow: 1px 5px 5px rgb(44, 44, 44);
-    background-color: #B7410E;
-}
-
-.link4:hover p{
-    color: white;
-}
-
-.link4:not(:hover){
-    transition: 0.5s;
-}
-
-.infos{
-    width: 1100px;
-    text-align: center;
-    transform: translateX(35%);
-}
-
-.infos h1{
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-
-.infos li{
-    font-size: 25px;
-    text-align: left;
-    padding-top: 10px;
-}
-
-
-
-/*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS*/
-
-#imagensContainers{
-    display: flex;
-    margin-left: 5%;
-    margin-top: 10%;
-}
-
-.ContainersUsados{
-    width: 750px;
-    height: 550px;
-    background-color: white;
-    text-align: center;
-    border-radius: 10px;
-    user-select: none;
-}
-
-.ContainersUsados p{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-.image-container40{
-    display: none;
-}
-
-.image-container40 img{
-    margin-top: 20px;
-    width: 650px;
-    height: 440px;
-    border-radius: 5px;
-}
-
-.image-container40 #img3{
-    margin-top: 5px;
-    width: 580px;
-    height: 700px;
-}
-
-.image-container40.active{
-    display: block;
-}
-
-.ContainersUsados figcaption{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 19px;
-}
-
-.seta-container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    transform: translateY(-1400%);
-}
-
-.SetaDireita, .SetaEsquerda{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    font-size: 30px;
-    user-select: none;
-    color: #D8A66A;
-}
-
-.SetaDireita{
-    margin-right: 15px;
-}
-
-.SetaEsquerda{
-    margin-left: 10px;
-}
-
-
-/*CÓDIGOS DA BOX CONTAINERS SEMI-NOVOS*/
-.ContainersSemiNovos{
-    width: 750px;
-    height: 550px;
-    background-color: white;
-    margin-left: 10%;
-    text-align: center;
-    border-radius: 10px;
-    user-select: none;
-}
-
-.ContainersSemiNovos p{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-.imageContainer-SemiNovo{
-    display: none;
-}
-
-.imageContainer-SemiNovo img{
-    margin-top: 20px;
-    width: 650px;
-    height: 440px;
-    border-radius: 5px;
-}
-
-.imageContainer-SemiNovo #img3{
-    margin-top: 5px;
-    width: 580px;
-    height: 700px;
-}
-
-.imageContainer-SemiNovo.ativa{
-    display: block;
-}
-
-.ContainersSemiNovos figcaption{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 19px;
-}
-
-.seta-containerSemiNovo{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    transform: translateY(-1400%);
-}
-
-.SetaDireita-SemiNovo, .SetaEsquerda-SemiNovo {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    font-size: 30px;
-    user-select: none;
-    color: #D8A66A;
-}
-
-.SetaDireita-SemiNovo {
-    margin-right: 15px;
-}
-
-.SetaEsquerda-SemiNovo {
-    margin-left: 10px;
-}
-
-
-/*CÓDIGOS PARA A BOX DE ACESSO RÁPIDO PARA OS CONTAINERS DE 20 PÉS*/
-#box20pes{
-    width: 850px;
-    height: 250px;
-    margin: 100px 510px;
-    border-radius: 50px;
-    text-align: center;
-}
-
-
-#box20pes p{
-    padding: 25px;
-    font-size: 25px;
-    font-weight: 550;
-}
-
-#box20pes a > p{
-    background-color: white;
-    margin-left: 275px;
-    width: 300px;
-    font-size: 25px;
-    border-radius: 40px;
-    box-shadow: 1px 5px 5px rgb(44, 44, 44);
-}
-
-#box20pes a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-} 
-
-#box20pes a > p:hover{
-    transform: scale(1.05);
-    transition: 0.4s;
-}
-
-
-/*CÓDIGOS DA BOX DAS REDES SOCIAIS E COM IMAGEM ILUSTRATIVA*/
-.RedesSociais{
-    margin-left: 8%;
-    width: 1550px;
-    height: 680px;
-    background-color: #D8A66A;
-    border-radius: 30px;
-}
-
-#conclusao{
-    width: 600px;
-    height: 200px;
-    font-size: 27px;
-    font-weight: bold;
-    padding: 150px 0 0 150px;
-    margin-top: 100px;
-    text-align: center;
-    border: 0;
-    color: white; /*MUDAR QLQR COISA*/
-}
-
-#conclusao p{
-    margin: 0;
-}
-
-#contatos {
-    width: 690px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px 0 0 30px;
-}
-
-#contatos a{
-    margin: 0 20px; /*Adiciona um espaçamento entre as imagens*/
-}
-
-#insta{
-    width: 80px;
-    height: 76px;
-}
-
-#email{
-    width: 100px;
-    height: 90px;
-}
-
-#wpp{
-    width: 88px;
-    height: 90px;
-}
-
-.IAimage{
-    transform: translate(208%, -93%);
-    width: 470px;
-    height: 470px;
-
-}
-
-.RedesSociais figcaption{
-    font-weight: bold;
-    width: 220px;
-    transform: translate(504%, -2400%);
-}
-
-
-/*CÓDIGOS DO RODAPÉ DA PAGINA DE 40 PÉS*/
-footer{
-    width: 100%;
-    height: 451px;
-    background-color: white;
-    margin-top: 5%;
-}
-
-footer h4{
-    transform: translate(40%, -1615%);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#rodape{
-    transform: translateX(40%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 200px;
-    padding-top: 80px;
-}
-
-#rodape img{
-    width: 300px;
-    height: 270px;
-    margin-bottom: 15px;
-}
- 
-#rodape #email, 
-#rodape #wpp{
-    transform: translate(-955%, 800%);
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-}
-
-#rodape #insta{
-    transform: translate(-1280%, 1070%);
-    width: 15px;
-    height: 15px;
-    margin: 0 5px;
-}
-
-#itensSite{
-    width: 130px;
-    height: 250px;
-    transform: translate(700%, -55%);
-}
-
-#itensSite p{
-    font-size: 20px;
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#itensSite a{
-    display: grid;
-    margin: 25px 0;
-    text-decoration: none;
-    color: black;
-}
-
-#contato{
-    width: 220px;
-    height: 150px;
-    transform: translate(620%, -313%);
-}
-
-#contato p{
-    font-size: 20px;
-    margin-top: 80px;
-    font-weight: 300;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#contato a{
-    text-decoration: none;
-    color: black;
-    margin-left: 10px;
+    
+    
+    /*CÓDIGOS PARA TUDO DENTRO DA NAV*/
+    nav{
+        width: 100%;
+        height: 110px;
+        margin: 0;
+        display: flex;
+        background-color: #D8A66A;
+        padding: 10px; /* Adiciona um preenchimento interno para espaçamento */
+        user-select: none;
+        position: relative;
+        font-size: 20px;
+    }
+    
+    nav img{
+        width: 204px;
+        height: 50%;
+        margin-top: 20px;
+    }
+    
+    nav a{
+        color: black; /* Define a cor do texto para branco */
+        text-decoration: none; /* Remove sublinhado dos links */
+        margin-top: 29px;
+    }
+    
+    .home{
+        margin-left: 370px; /* Move o link HOME para a esquerda */
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .contato{
+        margin-left: 200px;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .home:hover, .contato:hover, .dropbtn:hover{
+        border-radius: 4px;
+        transition: 0.3s;
+        color: white;
+        transform: translateY(-5px);
+        
+    }
+    
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        margin-left: 200px;
+        margin-top: 29px;
+    }
+    
+    .dropbtn{
+        font-size: 0.9em;
+        line-height: normal;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        width: 250px;
+        z-index: 1;
+        background-color: white;
+        border-radius: 5px;
+        left: -30px;
+        padding: 15px;
+        transition: 0.5s;
+        margin-top: -20px;
+    }
+    
+    .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+      
+    .dropdown-content a:hover{
+        background-color: #ddd;
+        border-radius: 5px;
+        transition: 0.5s;
+        color: #B7410E;
+        transform: scale(1.05);
+        transition: transform 0.5s ease, color 0.5s ease; /* Adiciona transições para a transformação e cor */
+    }
+    
+    .dropdown-content a:not(:hover) {
+        transition: transform 0.5s; /* Transição mais lenta para voltar ao tamanho original */
+    }
+    
+    .show{
+        display:grid;
+    }
+    
+    button{
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-bottom: 30px;
+    }
+    
+    
+    /*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM CORTADA*/
+    
+    .container{
+        position: relative;
+        width: 1920px;
+        height: 650px;
+        background-image: url(./imagens40/Fundo40.png);
+        opacity: 80%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%); /*os dois primeiros 0 alteram a lateral esquerda e o topo da imagem, respectivamente, os dois numeros após a 1º virgula alteram o topo desgrudando ele da lateral direita, os dois numeros após a 2º virgula, alteram o tamanho do corte na diagonal a partir da lateral direita, e os ultimos dois numeros alteram o corte na diagonal mas a partir da lateral esquerda */
+    }
+    
+    .container h1{
+        opacity: 100%;
+        position: absolute;
+        top: 6%;
+        right: 8%;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .definicao40pes{
+        position: absolute;
+        width: 700px;
+        height: 388px;
+        right: 8.5%;
+        text-align: left;
+    }
+    
+    .definicao40pes p{
+        opacity: 100%;
+        margin-top: 22%;
+        font-size: 35px;
+        color: aliceblue;
+        font-weight: bold;
+    }
+    
+    #catalogo4{
+        position: absolute;
+        width: 400px;
+        height: 350px;
+        padding: 15px;
+        background-color: white;
+        transform: translate(45%, -165%);
+        border-radius: 20px;
+    }
+    
+    #catalogo4 p{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .link4{
+        margin-top: 40px;
+        text-decoration: none;
+        position: absolute;
+        width: 320px;
+        height: 85px;
+        left: 10%;
+        border-radius: 20px;
+        background-color: #D8A66A;
+    }
+    
+    .link4 p{
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 800;
+        padding-top: 5px;
+    }
+    
+    .link4:hover {
+        transform: scale(1.1); /* Aumenta um pouco o tamanho no hover */
+        transition: transform 0.5s; 
+        box-shadow: 1px 5px 5px rgb(44, 44, 44);
+        background-color: #B7410E;
+    }
+    
+    .link4:hover p{
+        color: white;
+    }
+    
+    .link4:not(:hover){
+        transition: 0.5s;
+    }
+    
+    .infos{
+        width: 1100px;
+        text-align: center;
+        transform: translateX(35%);
+    }
+    
+    .infos h1{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .infos li{
+        font-size: 25px;
+        text-align: left;
+        padding-top: 10px;
+    }
+    
+    
+    
+    /*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS*/
+    #imagensContainers{
+        display: flex;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+    
+    .ContainersUsados{
+        width: 750px;
+        height: 550px;
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        user-select: none;
+    }
+    
+    .ContainersUsados p{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    
+    .image-container40{
+        display: none;
+    }
+    
+    .image-container40 img{
+        margin-top: 20px;
+        width: 650px;
+        height: 440px;
+        border-radius: 5px;
+    }
+    
+    .image-container40 #img3{
+        margin-top: 5px;
+        width: 580px;
+        height: 700px;
+    }
+    
+    .image-container40.active{
+        display: block;
+    }
+    
+    .ContainersUsados figcaption{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 19px;
+    }
+    
+    .seta-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        transform: translateY(-1400%);
+    }
+    
+    .SetaDireita, .SetaEsquerda{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        font-size: 30px;
+        user-select: none;
+        color: #D8A66A;
+    }
+    
+    .SetaDireita{
+        margin-right: 15px;
+    }
+    
+    .SetaEsquerda{
+        margin-left: 10px;
+    }
+    
+    
+    /*CÓDIGOS DA BOX CONTAINERS SEMI-NOVOS*/
+    .ContainersSemiNovos{
+        width: 750px;
+        height: 550px;
+        background-color: white;
+        margin-left: 10%;
+        text-align: center;
+        border-radius: 10px;
+        user-select: none;
+    }
+    
+    .ContainersSemiNovos p{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    
+    .imageContainer-SemiNovo{
+        display: none;
+    }
+    
+    .imageContainer-SemiNovo img{
+        margin-top: 20px;
+        width: 650px;
+        height: 440px;
+        border-radius: 5px;
+    }
+    
+    .imageContainer-SemiNovo #img3{
+        margin-top: 5px;
+        width: 580px;
+        height: 700px;
+    }
+    
+    .imageContainer-SemiNovo.ativa{
+        display: block;
+    }
+    
+    .ContainersSemiNovos figcaption{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 19px;
+    }
+    
+    .seta-containerSemiNovo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        transform: translateY(-1400%);
+    }
+    
+    .SetaDireita-SemiNovo, .SetaEsquerda-SemiNovo {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        font-size: 30px;
+        user-select: none;
+        color: #D8A66A;
+    }
+    
+    .SetaDireita-SemiNovo {
+        margin-right: 15px;
+    }
+    
+    .SetaEsquerda-SemiNovo {
+        margin-left: 10px;
+    }
+    
+    
+    /*CÓDIGOS PARA A BOX DE ACESSO RÁPIDO PARA OS CONTAINERS DE 20 PÉS*/
+    #box20pes{
+        width: 850px;
+        height: 250px;
+        margin: 100px 510px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+    
+    #box20pes p{
+        padding: 25px;
+        font-size: 25px;
+        font-weight: 550;
+    }
+    
+    #box20pes a > p{
+        background-color: white;
+        margin-left: 275px;
+        width: 300px;
+        font-size: 25px;
+        border-radius: 40px;
+        box-shadow: 1px 5px 5px rgb(44, 44, 44);
+    }
+    
+    #box20pes a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    } 
+    
+    #box20pes a > p:hover{
+        transform: scale(1.05);
+        transition: 0.4s;
+    }
+    
+    
+    /*CÓDIGOS DA BOX DAS REDES SOCIAIS E COM IMAGEM ILUSTRATIVA*/
+    .RedesSociais{
+        margin-left: 8%;
+        width: 1550px;
+        height: 680px;
+        background-color: #D8A66A;
+        border-radius: 30px;
+    }
+    
+    #conclusao{
+        width: 600px;
+        height: 200px;
+        font-size: 27px;
+        font-weight: bold;
+        padding: 150px 0 0 150px;
+        margin-top: 100px;
+        text-align: center;
+        border: 0;
+        color: white; /*MUDAR QLQR COISA*/
+    }
+    
+    #conclusao p{
+        margin: 0;
+    }
+    
+    #contatos {
+        width: 690px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 150px 0 0 30px;
+    }
+    
+    #contatos a{
+        margin: 0 20px; /*Adiciona um espaçamento entre as imagens*/
+    }
+    
+    #insta{
+        width: 80px;
+        height: 76px;
+    }
+    
+    #email{
+        width: 100px;
+        height: 90px;
+    }
+    
+    #wpp{
+        width: 88px;
+        height: 90px;
+    }
+    
+    .IAimage{
+        transform: translate(208%, -93%);
+        width: 470px;
+        height: 470px;
+    
+    }
+    
+    .RedesSociais figcaption{
+        font-weight: bold;
+        width: 220px;
+        transform: translate(504%, -2400%);
+    }
+    
+    
+    /*CÓDIGOS DO RODAPÉ DA PAGINA DE 40 PÉS*/
+    footer{
+        width: 100%;
+        height: 451px;
+        background-color: white;
+        margin-top: 5%;
+    }
+    
+    footer h4{
+        transform: translate(40%, -1615%);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #rodape{
+        transform: translateX(40%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 200px;
+        padding-top: 80px;
+    }
+    
+    #rodape img{
+        width: 300px;
+        height: 270px;
+        margin-bottom: 15px;
+    }
+     
+    #rodape #email, 
+    #rodape #wpp{
+        transform: translate(-955%, 800%);
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+    
+    #rodape #insta{
+        transform: translate(-1280%, 1070%);
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+    }
+    
+    #itensSite{
+        width: 130px;
+        height: 250px;
+        transform: translate(700%, -55%);
+    }
+    
+    #itensSite p{
+        font-size: 20px;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #itensSite a{
+        display: grid;
+        margin: 25px 0;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #contato{
+        width: 220px;
+        height: 150px;
+        transform: translate(620%, -313%);
+    }
+    
+    #contato p{
+        font-size: 20px;
+        margin-top: 80px;
+        font-weight: 300;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #contato a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    /*CÓDIGOS DA NAVBAR DA PARTE DE CIMA*/
+    nav img{
+        width: 150px;
+        height: 50px;
+        margin-top: 0px;
+    }
+
+    nav{
+        width: 720px;
+        height: 120px;
+        margin: 0;
+        display: flex;
+        background-color: #D8A66A;
+        padding: 5px; /* Adiciona um preenchimento interno para espaçamento */
+        user-select: none;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    nav a{
+        color: black; /* Define a cor do texto para branco */
+        text-decoration: none; /* Remove sublinhado dos links */
+        margin-top: 65px;
+    }
+    
+    .home{
+        margin-left: -90px; /* Move o link HOME para a esquerda */
+        height: 40px;
+    }
+    
+    .contato{
+        margin-left: 20px;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .home:hover, .contato:hover, .dropbtn:hover{
+        border-radius: 4px;
+        transition: 0.3s;
+        color: white;
+        transform: translateY(-5px);
+        
+    }
+    
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    
+    .dropbtn{
+        font-size: 15px;
+        line-height: normal;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        width: 220px;
+        z-index: 1;
+        background-color: white;
+        border-radius: 5px;
+        left: -30px;
+        padding: 15px;
+        transition: 0.5s;
+        margin-top: -20px;
+    }
+    
+    .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+      
+    .dropdown-content a:hover{
+        background-color: #ddd;
+        border-radius: 5px;
+        transition: 0.5s;
+        color: #B7410E;
+        transform: scale(1.05);
+        transition: transform 0.5s ease, color 0.5s ease; /* Adiciona transições para a transformação e cor */
+    }
+    
+    .dropdown-content a:not(:hover) {
+        transition: transform 0.5s; /* Transição mais lenta para voltar ao tamanho original */
+    }
+    
+    .show{
+        display:grid;
+    }
+    
+    button{
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-bottom: 30px;
+    }
+
+
+    /*CÓDIGOS PARA A TUDO DENTRO DA IMAGEM*/
+    .container {
+        opacity: 100%;
+        background-image: url('./imagens/testeFundo.jpeg');
+        position: relative;
+        width: 720px;
+        height: 1310px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /*os dois primeiros 0 alteram a lateral esquerda e o topo da imagem, respectivamente, os dois numeros após a 1º virgula alteram o topo desgrudando ele da lateral direita, os dois numeros após a 2º virgula, alteram o tamanho do corte na diagonal a partir da lateral direita, e os ultimos dois numeros alteram o corte na diagonal mas a partir da lateral esquerda*/
+    }
+
+    .container h1{
+        position: absolute;
+        top: 7%;
+        right: 35.5%;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+        width: 450px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .definicao40pes{
+        position: absolute;
+        width: 350px;
+        top: 20%;
+        left: 9%;
+    }
+    
+    .definicao40pes p{
+        margin: 0;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #catalogo4{
+        position: absolute;
+        width: 300px;
+        height: 290px;
+        padding: 15px;
+        background-color: white;
+        border-radius: 20px;
+        right: 65%;
+        top: 95%;
+    }
+    
+    #catalogo4 p{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .link4{
+        margin-top: 20px;
+        text-decoration: none;
+        position: absolute;
+        width: 235px;
+        height: 75px;
+        left: 10%;
+        border-radius: 20px;
+        background-color: #D8A66A;
+    }
+    
+    .link4 p{
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 800;
+        padding-top: 5px;
+    }
+    
+    .link4:hover {
+        transform: scale(1.1); /* Aumenta um pouco o tamanho no hover */
+        transition: transform 0.5s; 
+        box-shadow: 1px 5px 5px rgb(44, 44, 44);
+        background-color: #B7410E;
+    }
+    
+    .link4:hover p{
+        color: white;
+    }
+    
+    .link4:not(:hover){
+        transition: 0.5s;
+    }
+    
+    .infos{
+        width: 440px;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: -135px;
+    }
+    
+    .infos h1{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .infos li{
+        width: 375px;
+        margin-left: 35px;
+        font-size: 25px;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+
+    /*CÓDIGO DA BOX QUE MOSTRA OS CONTAINERS USADOS*/
+    #imagensContainers{
+        display: grid;
+        margin-top: 100px;
+        margin-left: 17px;
+    }
+    
+    .ContainersUsados{
+        width: 450px;
+        height: 350px;
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        user-select: none;
+        margin-left: -4px;
+    }
+    
+    .ContainersUsados p{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    
+    .image-container40{
+        display: none;
+    }
+    
+    .image-container40 img{
+        margin-top: 20px;
+        width: 380px;
+        height: 350px;
+        border-radius: 5px;
+    }
+    
+    .image-container40 #img3{
+        margin-top: 5px;
+        width: 380px;
+        height: 700px;
+        margin-left: 2px;
+    }
+    
+    .image-container40.active{
+        display: block;
+    }
+    
+    .ContainersUsados figcaption{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 19px;
+    }
+    
+    .seta-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        transform: translateY(-1400%);
+    }
+    
+    .SetaDireita, .SetaEsquerda{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        font-size: 30px;
+        user-select: none;
+        color: #D8A66A;
+    }
+    
+    .SetaDireita{
+        margin-right: 15px;
+    }
+    
+    .SetaEsquerda{
+        margin-left: 10px;
+    }
+
+
+    /*CÓDIGOS DA BOX CONTAINERS SEMI-NOVOS*/
+    .ContainersSemiNovos{
+        width: 450px;
+        height: 350px;
+        background-color: white;
+        margin-left: -4px;
+        margin-top: 8%;
+        text-align: center;
+        border-radius: 10px;
+        user-select: none;
+    }
+    
+    .ContainersSemiNovos p{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    
+    .imageContainer-SemiNovo{
+        display: none;
+    }
+    
+    .imageContainer-SemiNovo img{
+        margin-top: 20px;
+        width: 380px;
+        height: 350px;
+        border-radius: 5px;
+    }
+    
+    .imageContainer-SemiNovo #img3{
+        margin-top: 5px;
+        width: 380px;
+        height: 700px;
+        margin-left: 2px;
+    }
+    
+    .imageContainer-SemiNovo.ativa{
+        display: block;
+    }
+    
+    .ContainersSemiNovos figcaption{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 19px;
+    }
+    
+    .seta-containerSemiNovo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        transform: translateY(-1400%);
+    }
+    
+    .SetaDireita-SemiNovo, .SetaEsquerda-SemiNovo {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        font-size: 30px;
+        user-select: none;
+        color: #D8A66A;
+    }
+    
+    .SetaDireita-SemiNovo {
+        margin-right: 15px;
+    }
+    
+    .SetaEsquerda-SemiNovo {
+        margin-left: 10px;
+    }
+
+
+    /*CÓDIGOS PARA A BOX DE ACESSO RÁPIDO PARA OS CONTAINERS DE 20 PÉS*/
+    #box20pes{
+        width: 400px;
+        height: 250px;
+        margin: 100px 40px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+    
+    #box20pes p{
+        margin-left: 3px;
+        padding: 25px;
+        font-size: 25px;
+        font-weight: 550;
+    }
+    
+    #box20pes a > p{
+        background-color: white;
+        margin-left: 50px;
+        width: 300px;
+        font-size: 25px;
+        border-radius: 40px;
+        box-shadow: 1px 5px 5px rgb(44, 44, 44);
+    }
+    
+    #box20pes a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    } 
+    
+    #box20pes a > p:hover{
+        transform: scale(1.05);
+        transition: 0.4s;
+    }
+    
+    
+    /*CÓDIGOS DA BOX DAS REDES SOCIAIS E COM IMAGEM ILUSTRATIVA*/
+    .RedesSociais{
+        width: 350px;
+        height: 470px;
+        background-color: #D8A66A;
+        margin-left: 65px;
+        border-radius: 30px;
+        margin-top: 200px;
+    }
+
+    .IAimage{
+        display: none;
+    }
+
+    .RedesSociais figcaption{
+        display: none;
+    }
+    
+    #conclusao{
+        width: 350px;
+        height: 200px;
+        font-size: 25px;
+        padding: 30px 10px;
+        padding-top: 60px;
+        padding-left: 20px;
+        text-align: left;
+        color: white; /*MUDAR QLQR COISA*/
+    }
+    
+    #conclusao p{
+        margin: 0;
+    }
+    
+    #contatos{
+        width: 690px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: -170px;
+    }
+    
+    #contatos a{
+        margin: 0 10px; /* Adicione um espaçamento entre as imagens */
+    }
+    
+    #insta{
+        width: 80px;
+        height: 76px;
+
+    }
+    
+    #email{
+        width: 100px;
+        height: 90px;
+
+    }
+    
+    #wpp{
+        width: 88px;
+        height: 90px;
+    }
+
+
+    /*CÓDIGOS DO RODAPÉ DA PAGINA DE 20 PÉS*/
+    footer{
+        width: 720px;
+        height: 418px;
+        background-color: white;
+        margin-top: 5%;
+    }
+    
+    footer h4{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        margin-left: -215px;
+        margin-top: 32px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    #rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 200px;
+        margin-left: -310px;
+    }
+    
+    #rodape img{
+        width: 100px;
+        height: 100px;
+        margin-top: -165px;
+        margin-left: -200px;
+    }
+     
+    #rodape #insta,
+    #rodape #email, 
+    #rodape #wpp{
+        display: none; /*VAI FAZER COM QUE NÃO APAREÇAM O INSTA, EMAIL E WPP EMBAIXO DO LOGO*/
+    }
+
+    #itensSite{
+        width: 130px;
+        height: 250px;
+        margin-left: -810px;
+        margin-top: -45px;
+    }
+    
+    #itensSite p{
+        font-size: 20px;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #itensSite a{
+        display: grid;
+        margin: 25px 0;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #contato{
+        width: 210px;
+        height: 150px;
+        margin-left: -1050px;
+        text-align: right;
+    }
+    
+    #contato p{
+        font-size: 20px;
+        margin-top: 82px;
+        font-weight: 300;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #contato a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+    }
 }

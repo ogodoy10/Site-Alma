@@ -590,7 +590,7 @@ html{
 
 
 /*FORMATAÇÃO PARA CELULAR*/
-@media screen and (max-width: 720px){ /*POR ALGUM MOTIVO ESSA BOMBA N FUNCIONOU, TEM Q REVER PQ A RESPONSIVIDADE N DA CERTO*/
+@media screen and (max-width: 750px){
     body{
         width: 100%;
         height: 100%;
@@ -613,17 +613,17 @@ html{
         padding: 5px; /* Adiciona um preenchimento interno para espaçamento */
         user-select: none;
         position: relative;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     nav a{
         color: black; /* Define a cor do texto para branco */
         text-decoration: none; /* Remove sublinhado dos links */
-        margin-top: 65px;
+        margin-top: 60px;
     }
     
     .home{
-        margin-left: -90px; /* Move o link HOME para a esquerda */
+        margin-left: -35px; /* Move o link HOME para a esquerda */
         height: 40px;
     }
     
@@ -649,7 +649,7 @@ html{
     }
     
     .dropbtn{
-        font-size: 15px;
+        font-size: 18px;
         line-height: normal;
         padding: 0;
         cursor: pointer;
@@ -664,7 +664,7 @@ html{
         z-index: 1;
         background-color: white;
         border-radius: 5px;
-        left: -30px;
+        left: -20px;
         padding: 15px;
         transition: 0.5s;
         margin-top: -20px;
@@ -714,7 +714,7 @@ html{
     .AlmaContainers{
         position: absolute;
         top: -2%;
-        left: 32%;
+        left: 45%;
         color: black;
         padding: 5px;
         text-align: center;
@@ -726,6 +726,8 @@ html{
 
     .AlmaContainers p{
         margin-left: 15px;
+        font-size: 25px;
+        color: white;
     }
 
     .AlmaContainers h6{
@@ -735,9 +737,9 @@ html{
 
     .SobreContainer{
         position: absolute;
-        top: 43%;
-        left: 33%;
-        width: 410px;
+        top: 49%;
+        left: 45%;
+        width: 450px;
         height: 143px;
         color: white;
         text-align: center;
@@ -745,12 +747,12 @@ html{
 
     .SobreContainer p{
         margin: 0;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .SobreContainer h6{
         margin-bottom: 35px;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     #CatalogoInicial{
@@ -758,8 +760,8 @@ html{
         color: white;
         width: 414px;
         height: 143px;
-        top: 64%;
-        left: 4%;
+        top: 75%;
+        left: 16%;
         text-align: center;
     }
 
@@ -770,8 +772,8 @@ html{
     .link{
         text-decoration: none;
         position: absolute;
-        top: 73%;
-        left: 100px;
+        top: 84%;
+        left: 185px;
         text-align: center;
         width: 269px;
         height: 80px;
@@ -815,7 +817,7 @@ html{
     /*COMEÇO DA PARTE DO SITE SEM A IMAGEM DE FUNDO*/
     /*CÓDIGOS DAS DUAS LISTAS QUE MOSTRAM PONTOS POSITIVOS DE COMPRA E ALUGUEL*/
     .curiosidades h3{
-        margin: 100px 0 0 -15px;
+        margin: 100px 0 0 75px;
         width: 500px;
         font-size: 30px;
         color: white;
@@ -823,9 +825,9 @@ html{
      }
      
      .comprar{
-         width: 300px;
-         height: 970px;
-         margin-left: 87px;
+         width: 400px;
+         height: 730px;
+         margin-left: 125px;
          text-align: center;
          background-color:#D8A66A;
          border-radius: 20px;
@@ -856,10 +858,10 @@ html{
      }
      
      .alugar{
-         width: 300px;
-         height: 1140px;
+         width: 400px;
+         height: 820px;
          background-color: #D8A66A;
-         margin-left: 87px;
+         margin-left: 125px;
          margin-top: 50px;
          border-radius: 20px;
          text-align: center;
@@ -897,7 +899,7 @@ html{
         margin-top: 150px;
         font-size: 25px;
         color: white;
-        margin-left: -50px;
+        margin-left: 35px;
     }
     
     .link2{
@@ -934,7 +936,7 @@ html{
         width: 350px;
         height: 470px;
         background-color: #D8A66A;
-        margin-left: 27px;
+        margin-left: 110px;
         border-radius: 30px;
     }
 
@@ -1001,12 +1003,12 @@ html{
     
     .perguntas h1{
         font-size: 40px;
-        margin-left: -216px;
+        margin-left: -130px;
     }
     
     .perguntas h4{
         font-size: 30px;
-        margin-left: -239px;
+        margin-left: -155px;
         text-align: center;
         width: 420px;
     }
@@ -1016,7 +1018,7 @@ html{
         cursor: pointer;
         padding: 10px;
         margin-top: 5px;
-        margin-left: -210px;
+        margin-left: -130px;
         font-size: 30px;
         user-select: none;
     }
@@ -1026,10 +1028,10 @@ html{
     }
       
     .faq-answer{
-        width: 330px;
+        width: 310px; /*MODIFICA O TAMANHO DA SEÇÃO DE RESPOSTAS DAS PERGUNTAS, MUDAR QLQR COISA NO FINAL*/
         padding: 10px;
         display: none;
-        margin-left: -175px;
+        margin-left: -95px;
         font-size: 20px;
     }
 
@@ -1045,7 +1047,7 @@ html{
     footer h4{
         font-family: Arial, Helvetica, sans-serif;
         width: 500px;
-        margin-left: -215px;
+        margin-left: -130px;
         margin-top: -25px;
         text-align: center;
     }
@@ -1076,7 +1078,7 @@ html{
     #itensSite{
         width: 130px;
         height: 250px;
-        margin-left: -810px;
+        margin-left: -800px;
         margin-top: -45px;
     }
     
@@ -1096,7 +1098,7 @@ html{
     #contato{
         width: 210px;
         height: 150px;
-        margin-left: -1050px;
+        margin-left: -880px;
         text-align: right;
     }
     

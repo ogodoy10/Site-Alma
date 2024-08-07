@@ -8,265 +8,533 @@ html{
     height: 100%;
 }
 
-body{
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #D88B6A;
-}
 
-/*CÓDIGOS DA NAVBAR DA PARTE DE CIMA*/
-nav{
-    width: 100%;
-    height: 110px;
-    margin: 0;
-    display: flex;
-    background-color: #D8A66A;
-    padding: 10px; /* Adiciona um preenchimento interno para espaçamento */
-    user-select: none;
-    position: relative;
-    font-size: 20px;
-}
-
-nav img{
-    width: 204px;
-    height: 50%;
-    margin-top: 20px;
-}
-
-nav a{
-    color: black; /* Define a cor do texto para branco */
-    text-decoration: none; /* Remove sublinhado dos links */
-    margin-top: 29px;
-}
-
-.home{
-    margin-left: 370px; /* Move o link HOME para a esquerda */
-    height: 40px;
-    padding: 7px;
-}
-
-.contato{
-    margin-left: 200px;
-    height: 40px;
-    padding: 7px;
-}
-
-.home:hover, .contato:hover, .dropbtn:hover{
-    border-radius: 4px;
-    transition: 0.3s;
-    color: white;
-    transform: translateY(-5px);
+@media screen and (max-width: 1920px){
+    body{
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #D88B6A;
+    }
     
+    /*CÓDIGOS DA NAVBAR DA PARTE DE CIMA*/
+    nav{
+        width: 100%;
+        height: 110px;
+        margin: 0;
+        display: flex;
+        background-color: #D8A66A;
+        padding: 10px; /* Adiciona um preenchimento interno para espaçamento */
+        user-select: none;
+        position: relative;
+        font-size: 20px;
+    }
+    
+    nav img{
+        width: 204px;
+        height: 50%;
+        margin-top: 20px;
+    }
+    
+    nav a{
+        color: black; /* Define a cor do texto para branco */
+        text-decoration: none; /* Remove sublinhado dos links */
+        margin-top: 29px;
+    }
+    
+    .home{
+        margin-left: 370px; /* Move o link HOME para a esquerda */
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .contato{
+        margin-left: 200px;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .home:hover, .contato:hover, .dropbtn:hover{
+        border-radius: 4px;
+        transition: 0.3s;
+        color: white;
+        transform: translateY(-5px);
+        
+    }
+    
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        margin-left: 200px;
+        margin-top: 29px;
+    }
+    
+    .dropbtn{
+        font-size: 0.9em;
+        line-height: normal;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        width: 250px;
+        z-index: 1;
+        background-color: white;
+        border-radius: 5px;
+        left: -30px;
+        padding: 15px;
+        transition: 0.5s;
+        margin-top: -20px;
+    }
+    
+    .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+      
+    .dropdown-content a:hover{
+        background-color: #ddd;
+        border-radius: 5px;
+        transition: 0.5s;
+        color: #B7410E;
+        transform: scale(1.05);
+        transition: transform 0.5s ease, color 0.5s ease; /* Adiciona transições para a transformação e cor */
+    }
+    
+    .dropdown-content a:not(:hover) {
+        transition: transform 0.5s; /* Transição mais lenta para voltar ao tamanho original */
+    }
+    
+    .show{
+        display:grid;
+    }
+    
+    button{
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-bottom: 30px;
+    }
+    
+    
+    /*CÓDIGOS DA BOX COM OS MEIOS DE CONTATO*/
+    #box{
+        width: 1200px;
+        height: 480px;
+        background-color: #ba5b32;
+        margin-left: 18%;
+    }
+    
+    #box h1{
+        padding: 30px 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    
+    #p1{
+        font-size: 20px;
+        margin: 80px 70px;
+        width: 285px;
+    }
+    
+    #p2{
+        font-size: 20px;
+        margin-left: 70px;
+        width: 220px;    
+    }
+    
+    #p3{
+        font-size: 20px;
+        margin: 80px 70px;
+        width: 222px;
+    }
+    
+    #p1:hover{
+        transform: translateX(5%);
+        transition: 0.4s;
+    }
+    
+    #ap1:hover{
+        color: #D8A66A;
+        text-decoration:underline;
+    }
+    
+    #p2:hover{
+        transform: translateX(5%);
+        transition: 0.4s;
+    }
+    
+    #ap2:hover{
+        color: #D8A66A;
+        text-decoration: underline;
+    }
+    
+    #p3:hover{
+        transform: translateX(5%);
+        transition: 0.4s;
+    }
+    
+    #ap3:hover{
+        color: #D8A66A;
+        text-decoration: underline;
+    }
+    
+    #box a{
+        text-decoration: none;
+        color: #89C3FF;
+    }
+    
+    
+    
+    /*CÓDIGOS DO RODAPÉ DA PAGINA CONTATO*/
+    footer{
+        width: 100%;
+        height: 294px;
+        margin-top: 20px;
+        background-color: white;
+    }
+    
+    footer h4{
+        transform: translate(40%, -2470%);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #rodape{
+        transform: translateX(40%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 200px;
+        padding-top: 40px;
+    }
+    
+    #rodape img{
+        width: 250px;
+        height: 220px;
+    }
+    
+    #rodape #email, 
+    #rodape #wpp{
+        transform: translate(-820%, 650%);
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+    
+    #rodape #insta{
+        transform: translate(-1100%, 871%);
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+    }
+    
+    #itensSite{
+        width: 130px;
+        height: 250px;
+        transform: translate(700%, -73%);
+    }
+    
+    #itensSite p{
+        font-size: 20px;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #itensSite a{
+        display: grid;
+        margin: 15px 0;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #contato{
+        width: 220px;
+        height: 150px;
+        transform: translate(620%, -343%);
+    }
+    
+    #contato p{
+        font-size: 20px;
+        margin-top: 80px;
+        font-weight: 300;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #contato a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+    }
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
-    margin-left: 200px;
-    margin-top: 29px;
-}
-
-.dropbtn{
-    font-size: 0.9em;
-    line-height: normal;
-    padding: 0;
-    cursor: pointer;
-    height: 40px;
-    padding: 7px;
-}
-
-.dropdown-content{
-    display: none;
-    position: absolute;
-    width: 250px;
-    z-index: 1;
-    background-color: white;
-    border-radius: 5px;
-    left: -30px;
-    padding: 15px;
-    transition: 0.5s;
-    margin-top: -20px;
-}
-
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    margin-top: 5px;
-}
-  
-.dropdown-content a:hover{
-    background-color: #ddd;
-    border-radius: 5px;
-    transition: 0.5s;
-    color: #B7410E;
-    transform: scale(1.05);
-    transition: transform 0.5s ease, color 0.5s ease; /* Adiciona transições para a transformação e cor */
-}
-
-.dropdown-content a:not(:hover) {
-    transition: transform 0.5s; /* Transição mais lenta para voltar ao tamanho original */
-}
-
-.show{
-    display:grid;
-}
-
-button{
-    background: transparent;
-    border: none;
-    outline: none;
-    margin-bottom: 30px;
-}
-
-
-/*CÓDIGOS DA BOX COM OS MEIOS DE CONTATO*/
-#box{
-    width: 1200px;
-    height: 480px;
-    background-color: #ba5b32;
-    margin-left: 18%;
-}
-
-#box h1{
-    padding: 30px 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-}
-
-#p1{
-    font-size: 20px;
-    margin: 80px 70px;
-    width: 285px;
-}
-
-#p2{
-    font-size: 20px;
-    margin-left: 70px;
-    width: 220px;    
-}
-
-#p3{
-    font-size: 20px;
-    margin: 80px 70px;
-    width: 222px;
-}
-
-#p1:hover{
-    transform: translateX(5%);
-    transition: 0.4s;
-}
-
-#ap1:hover{
-    color: #D8A66A;
-    text-decoration:underline;
-}
-
-#p2:hover{
-    transform: translateX(5%);
-    transition: 0.4s;
-}
-
-#ap2:hover{
-    color: #D8A66A;
-    text-decoration: underline;
-}
-
-#p3:hover{
-    transform: translateX(5%);
-    transition: 0.4s;
-}
-
-#ap3:hover{
-    color: #D8A66A;
-    text-decoration: underline;
-}
-
-#box a{
-    text-decoration: none;
-    color: #89C3FF;
-}
 
 
 
-/*CÓDIGOS DO RODAPÉ DA PAGINA INICIAL*/
-footer{
-    width: 100%;
-    height: 294px;
-    margin-top: 20px;
-    background-color: white;
-}
+@media screen and (max-width: 750px){
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
 
-footer h4{
-    transform: translate(40%, -2470%);
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-#rodape{
-    transform: translateX(40%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 200px;
-    padding-top: 40px;
-}
+    /*CÓDIGOS DA NAVBAR DA PARTE DE CIMA*/
+    nav img{
+        width: 150px;
+        height: 50px;
+        margin-top: 0px;
+    }
 
-#rodape img{
-    width: 250px;
-    height: 220px;
-}
+    nav{
+        width: 720px;
+        height: 120px;
+        margin: 0;
+        display: flex;
+        background-color: #D8A66A;
+        padding: 5px; /* Adiciona um preenchimento interno para espaçamento */
+        user-select: none;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    nav a{
+        color: black; /* Define a cor do texto para branco */
+        text-decoration: none; /* Remove sublinhado dos links */
+        margin-top: 65px;
+    }
+    
+    .home{
+        margin-left: -94px; /* Move o link HOME para a esquerda */
+        height: 40px;
+    }
+    
+    .contato{
+        margin-left: 20px;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .home:hover, .contato:hover, .dropbtn:hover{
+        border-radius: 4px;
+        transition: 0.3s;
+        color: white;
+        transform: translateY(-5px);
+        
+    }
+    
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    
+    .dropbtn{
+        font-size: 15px;
+        line-height: normal;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        width: 220px;
+        z-index: 1;
+        background-color: white;
+        border-radius: 5px;
+        left: -30px;
+        padding: 15px;
+        transition: 0.5s;
+        margin-top: -20px;
+    }
+    
+    .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+      
+    .dropdown-content a:hover{
+        background-color: #ddd;
+        border-radius: 5px;
+        transition: 0.5s;
+        color: #B7410E;
+        transform: scale(1.05);
+        transition: transform 0.5s ease, color 0.5s ease; /* Adiciona transições para a transformação e cor */
+    }
+    
+    .dropdown-content a:not(:hover) {
+        transition: transform 0.5s; /* Transição mais lenta para voltar ao tamanho original */
+    }
+    
+    .show{
+        display:grid;
+    }
+    
+    button{
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-bottom: 30px;
+    }
 
-#rodape #email, 
-#rodape #wpp{
-    transform: translate(-820%, 650%);
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-}
 
-#rodape #insta{
-    transform: translate(-1100%, 871%);
-    width: 15px;
-    height: 15px;
-    margin: 0 5px;
-}
 
-#itensSite{
-    width: 130px;
-    height: 250px;
-    transform: translate(700%, -73%);
-}
+    /*CÓDIGOS DA BOX COM OS MEIOS DE CONTATO*/
+    #box{
+        width: 400px;
+        height: 580px;
+        background-color: #ba5b32;
+        margin: 100px 0 100px 36px;
+    }
+    
+    #box h1{
+        padding: 30px 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    
+    #p1{
+        font-size: 20px;
+        margin: 80px 30px;
+        width: 285px;
+    }
+    
+    #p2{
+        font-size: 20px;
+        margin-left: 30px;
+        width: 220px;    
+    }
+    
+    #p3{
+        font-size: 20px;
+        margin: 80px 30px;
+        width: 222px;
+    }
+    
+    #p1:hover{
+        transform: translateX(5%);
+        transition: 0.4s;
+    }
+    
+    #ap1:hover{
+        color: #D8A66A;
+        text-decoration:underline;
+    }
+    
+    #p2:hover{
+        transform: translateX(5%);
+        transition: 0.4s;
+    }
+    
+    #ap2:hover{
+        color: #D8A66A;
+        text-decoration: underline;
+    }
+    
+    #p3:hover{
+        transform: translateX(5%);
+        transition: 0.4s;
+    }
+    
+    #ap3:hover{
+        color: #D8A66A;
+        text-decoration: underline;
+    }
+    
+    #box a{
+        text-decoration: none;
+        color: #89C3FF;
+    }
 
-#itensSite p{
-    font-size: 20px;
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
-#itensSite a{
-    display: grid;
-    margin: 15px 0;
-    text-decoration: none;
-    color: black;
-}
+    /*CÓDIGOS DO RODAPÉ DA PAGINA DE CONTATO*/
+    footer{
+        width: 720px;
+        height: 380px;
+        background-color: white;
+    }
+    
+    footer h4{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        margin-left: -214px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    #rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 200px;
+        margin-left: -310px;
+    }
+    
+    #rodape img{
+        width: 100px;
+        height: 100px;
+        margin-top: -140px;
+        margin-left: -200px;
+    }
+     
+    #rodape #insta,
+    #rodape #email, 
+    #rodape #wpp{
+        display: none; /*VAI FAZER COM QUE NÃO APAREÇAM O INSTA, EMAIL E WPP EMBAIXO DO LOGO*/
+    }
 
-#contato{
-    width: 220px;
-    height: 150px;
-    transform: translate(620%, -343%);
-}
-
-#contato p{
-    font-size: 20px;
-    margin-top: 80px;
-    font-weight: 300;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#contato a{
-    text-decoration: none;
-    color: black;
-    margin-left: 10px;
+    #itensSite{
+        width: 130px;
+        height: 250px;
+        margin-left: -810px;
+    }
+    
+    #itensSite p{
+        font-size: 20px;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #itensSite a{
+        display: grid;
+        margin: 25px 0;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #contato{
+        width: 210px;
+        height: 150px;
+        margin-left: -1050px;
+        text-align: right;
+    }
+    
+    #contato p{
+        font-size: 20px;
+        margin-top: 82px;
+        font-weight: 300;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #contato a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+    }
 }

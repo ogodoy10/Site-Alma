@@ -596,7 +596,7 @@ html, body{
     }
     
     .home{
-        margin-left: -90px; /* Move o link HOME para a esquerda */
+        margin-left: -94px; /* Move o link HOME para a esquerda */
         height: 40px;
     }
     
@@ -699,14 +699,14 @@ html, body{
     
     .definicao40pes{
         position: absolute;
-        width: 350px;
+        width: 450px;
         top: 20%;
-        left: 9%;
+        left: 1.5%;
     }
     
     .definicao40pes p{
         margin: 0;
-        font-size: 25px;
+        font-size: 29px;
         color: white;
         font-weight: bold;
         text-align: center;
@@ -720,7 +720,7 @@ html, body{
         background-color: white;
         border-radius: 20px;
         right: 65%;
-        top: 95%;
+        top: 60%;
     }
     
     #catalogo4 p{
@@ -797,7 +797,7 @@ html, body{
         text-align: center;
         border-radius: 10px;
         user-select: none;
-        margin-left: -4px;
+        margin-left: -8px;
     }
     
     .ContainersUsados p{
@@ -864,7 +864,7 @@ html, body{
         width: 450px;
         height: 350px;
         background-color: white;
-        margin-left: -4px;
+        margin-left: -8px;
         margin-top: 8%;
         text-align: center;
         border-radius: 10px;
@@ -934,12 +934,11 @@ html, body{
     #box20pes{
         width: 400px;
         height: 250px;
-        margin: 100px 40px;
+        margin: 100px 35px;
         border-radius: 50px;
         text-align: center;
     }
-    
-    
+     
     #box20pes p{
         margin-left: 3px;
         padding: 25px;
@@ -949,7 +948,7 @@ html, body{
     
     #box20pes a > p{
         background-color: white;
-        margin-left: 50px;
+        margin-left: 48px;
         width: 300px;
         font-size: 25px;
         border-radius: 40px;

@@ -615,7 +615,7 @@ html{
     }
     
     .home{
-        margin-left: -90px; /* Move o link HOME para a esquerda */
+        margin-left: -94px; /* Move o link HOME para a esquerda */
         height: 40px;
     }
     
@@ -706,7 +706,7 @@ html{
     .container h1{
         position: absolute;
         top: 7%;
-        left: 32.5%;
+        left: 32.9%;
         color: black;
         text-align: center;
         font-size: 35px;
@@ -717,14 +717,14 @@ html{
     
     .definicao20pes{
         position: absolute;
-        width: 350px;
+        width: 450px;
         top: 11%;
-        left: 9%;
+        left: 1.5%;
     }
     
     .definicao20pes p{
         margin: 0;
-        font-size: 25px;
+        font-size: 29px;
         color: white;
         font-weight: bold;
         text-align: center;

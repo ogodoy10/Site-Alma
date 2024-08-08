@@ -480,7 +480,7 @@ html{
     }
     
     .faq-question{
-        width: 350px;
+        width: 1150px;
         cursor: pointer;
         padding: 10px;
         margin-top: 5px;
@@ -494,10 +494,16 @@ html{
     }
       
     .faq-answer{
+        width: 1200px;
         padding: 10px;
         display: none;
         margin-left: -365px;
         font-size: 20px;
+    }
+
+    .faq-question.active{
+        color: #B7410E; /* Cor quando a resposta estiver visível */
+        transition: 0.8s;
     }
     
     
@@ -1014,11 +1020,11 @@ html{
     }
     
     .faq-question{
-        width: 350px;
+        width: 550px;
         cursor: pointer;
         padding: 10px;
         margin-top: 5px;
-        margin-left: -130px;
+        margin-left: -213px;
         font-size: 30px;
         user-select: none;
     }
@@ -1028,13 +1034,17 @@ html{
     }
       
     .faq-answer{
-        width: 310px; /*MODIFICA O TAMANHO DA SEÇÃO DE RESPOSTAS DAS PERGUNTAS, MUDAR QLQR COISA NO FINAL*/
+        width: 500px; /*MODIFICA O TAMANHO DA SEÇÃO DE RESPOSTAS DAS PERGUNTAS, MUDAR QLQR COISA NO FINAL*/
         padding: 10px;
         display: none;
-        margin-left: -95px;
+        margin-left: -185px;
         font-size: 20px;
     }
 
+    .faq-question.active{
+        color: #B7410E; /* Cor quando a resposta estiver visível */
+        transition: 0.8s;
+    }
 
     /*CÓDIGOS DO RODAPÉ DA PAGINA INICIAL*/
     footer{
